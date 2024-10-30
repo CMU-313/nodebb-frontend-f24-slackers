@@ -25,6 +25,24 @@
 	</div>
 </div>
 
+<div class="d-flex justify-content-end gap-2">
+  <div>
+    <select class="form-select hidden" id="search-sort">
+      <option value="alpha">[[groups:details.group-name]]</option>
+      <option value="count">[[groups:details.member-count]]</option>
+      <option value="date">[[groups:details.creation-date]]</option>
+    </select>
+  </div>
+  <div>
+    <div class="input-group">
+      <input type="text" class="form-control form-control-sm" placeholder="[[global:search]]" name="query" id="category-search-text">
+      <button id="category-search-button" class="btn btn-primary btn-sm" aria-label="[[global:search]]">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
 {{{ if widgets.header.length }}}
 <div data-widget-area="header">
 	{{{ each widgets.header }}}

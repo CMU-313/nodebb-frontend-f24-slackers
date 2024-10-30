@@ -30,6 +30,21 @@
 </li>
 {{{ end }}}
 
+{{{ if !posts.verify }}}
+<li>
+	<a class="dropdown-item rounded-1 d-flex align-items-center gap-2" component="post/verify" role="menuitem" href="#">
+		<span class="menu-icon"><i class="fa fa-fw text-secondary fa-check"></i></span> Verify Message
+	</a>
+</li>
+{{{ end }}}
+{{{ if posts.verify }}}
+<li>
+	<a class="dropdown-item rounded-1 d-flex align-items-center gap-2" component="post/unverify" role="menuitem" href="#">
+		<span class="menu-icon"><i class="fa fa-fw text-secondary fa-check"></i></span> UnVerify Message
+	</a>
+</li>
+{{{ end }}}
+
 {{{ if posts.display_change_owner_tools }}}
 <li>
 	<a class="dropdown-item rounded-1 d-flex align-items-center gap-2" component="post/change-owner" role="menuitem" href="#">
